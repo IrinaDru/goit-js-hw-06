@@ -1,7 +1,10 @@
 const btnRef = document.querySelector('.change-color');
 const nameColorRef = document.querySelector('.color');
 const body = document.body;
-const colorRef = getRandomHexColor();
+
+btnRef.addEventListener('click', onColorChange);
+
+
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
@@ -9,9 +12,10 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-btnRef.addEventListener('click', onColorChange);
+
 
 function onColorChange() {
+  const colorRef = getRandomHexColor();
   body.style.backgroundColor = colorRef;
   nameColorRef.textContent = colorRef;
 }

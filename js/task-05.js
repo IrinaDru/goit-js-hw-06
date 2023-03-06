@@ -5,7 +5,7 @@ const nameLabel = document.querySelector("#name-output");
 
 // input.addEventListener('input', event => {   
 //     console.log(event.currentTarget.value);
-//     nameLabel.textContent = event.currentTarget.value;   
+//     nameLabel.textContenttextContent = event.currentTarget.value;   
 // });
 
 const defaultValue = 'Anonymous';
